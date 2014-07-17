@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7C10BF0F63C41F7A24C1EFC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A65E10FDDA4E828AC161FF /* libPods.a */; };
 		E52E1D191976EA4A00C90184 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1D181976EA4A00C90184 /* AppDelegate.swift */; };
 		E52E1D1B1976EA4A00C90184 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1D1A1976EA4A00C90184 /* ViewController.swift */; };
 		E52E1D1E1976EA4A00C90184 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52E1D1C1976EA4A00C90184 /* Main.storyboard */; };
 		E52E1D201976EA4A00C90184 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52E1D1F1976EA4A00C90184 /* Images.xcassets */; };
 		E52E1D2C1976EA4A00C90184 /* CoupleMotivateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52E1D2B1976EA4A00C90184 /* CoupleMotivateTests.swift */; };
+		E52E1DC31976F26000C90184 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52E1DC21976F26000C90184 /* AudioToolbox.framework */; };
+		E52E1DC51976F2C500C90184 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52E1DC41976F2C500C90184 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26A65E10FDDA4E828AC161FF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E50D2C53ECC4E87A8726627 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E52E1D131976EA4A00C90184 /* CoupleMotivate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoupleMotivate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52E1D171976EA4A00C90184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52E1D181976EA4A00C90184 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		E52E1D251976EA4A00C90184 /* CoupleMotivateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoupleMotivateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E52E1D2A1976EA4A00C90184 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52E1D2B1976EA4A00C90184 /* CoupleMotivateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupleMotivateTests.swift; sourceTree = "<group>"; };
+		E52E1DC21976F26000C90184 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E52E1DC41976F2C500C90184 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E5AA03591977C72400FF0176 /* CoupleMotivate-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoupleMotivate-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E52E1DC51976F2C500C90184 /* QuartzCore.framework in Frameworks */,
+				E52E1DC31976F26000C90184 /* AudioToolbox.framework in Frameworks */,
+				D7C10BF0F63C41F7A24C1EFC /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +65,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E9CCA5119B94B8692DB7605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26A65E10FDDA4E828AC161FF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E52E1D0A1976EA4A00C90184 = {
 			isa = PBXGroup;
 			children = (
+				E52E1DC41976F2C500C90184 /* QuartzCore.framework */,
+				E52E1DC21976F26000C90184 /* AudioToolbox.framework */,
 				E52E1D151976EA4A00C90184 /* CoupleMotivate */,
 				E52E1D281976EA4A00C90184 /* CoupleMotivateTests */,
 				E52E1D141976EA4A00C90184 /* Products */,
+				6E50D2C53ECC4E87A8726627 /* Pods.xcconfig */,
+				9E9CCA5119B94B8692DB7605 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +103,7 @@
 				E52E1D1C1976EA4A00C90184 /* Main.storyboard */,
 				E52E1D1F1976EA4A00C90184 /* Images.xcassets */,
 				E52E1D161976EA4A00C90184 /* Supporting Files */,
+				E5AA03591977C72400FF0176 /* CoupleMotivate-Bridging-Header.h */,
 			);
 			path = CoupleMotivate;
 			sourceTree = "<group>";
@@ -116,9 +140,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E52E1D2F1976EA4A00C90184 /* Build configuration list for PBXNativeTarget "CoupleMotivate" */;
 			buildPhases = (
+				ACB98D968734431F90DDC348 /* Check Pods Manifest.lock */,
 				E52E1D0F1976EA4A00C90184 /* Sources */,
 				E52E1D101976EA4A00C90184 /* Frameworks */,
 				E52E1D111976EA4A00C90184 /* Resources */,
+				9ADDE43D357D4857AA4438BE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,6 +228,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9ADDE43D357D4857AA4438BE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACB98D968734431F90DDC348 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E52E1D0F1976EA4A00C90184 /* Sources */ = {
@@ -322,23 +381,29 @@
 		};
 		E52E1D301976EA4A00C90184 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E50D2C53ECC4E87A8726627 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CoupleMotivate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoupleMotivate/CoupleMotivate-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		E52E1D311976EA4A00C90184 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E50D2C53ECC4E87A8726627 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = CoupleMotivate/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoupleMotivate/CoupleMotivate-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -397,6 +462,7 @@
 				E52E1D311976EA4A00C90184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E52E1D321976EA4A00C90184 /* Build configuration list for PBXNativeTarget "CoupleMotivateTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +471,7 @@
 				E52E1D341976EA4A00C90184 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
